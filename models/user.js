@@ -38,10 +38,10 @@ const userSchema = new mongoose.Schema({
     completedLessons: {
         type: [String],
         default: []
-}
-})
+    }
+});
 
-const user = mongoose.model('User', userSchema)
+const user = mongoose.model('User', userSchema);
 
 function validateUser(user) {
     const schema = Joi.object({
@@ -53,4 +53,4 @@ function validateUser(user) {
 }
 
 
-export { user, validateUser }
+export { user, validateUser };
