@@ -1,0 +1,30 @@
+{
+  "name": "mimo_study_app",
+  "version": "1.0.0",
+  "description": "A gemified studying app for Afghan Students",
+  "homepage": "https://github.com/farhadyousefe/mimo_study_app#readme",
+  "bugs": {
+    "url": "https://github.com/farhadyousefe/mimo_study_app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farhadyousefe/mimo_study_app.git"
+  },
+  "license": "ISC",
+  "author": "Farhad Yousefe",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "DEBUG=app:* nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "joi": "^18.2.3",
+    "mongoose": "^9.7.2"
+  },
+  "devDependencies": {
+    "debug": "^4.4.3",
+    "nodemon": "^3.1.14"
+  }
+}
