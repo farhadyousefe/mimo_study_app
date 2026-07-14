@@ -5,6 +5,7 @@ import mongoose from 'mongoose';
 import debug from 'debug';
 import Joi from 'joi';
 import authRouter from './routes/auth.js';
+import courseRoute from './routes/courses.js';
 
 const dbDebug = debug('app:db');
 dbDebug.color = 2;
@@ -23,6 +24,7 @@ if (!privateKey) {
 
 app.use(express.json());
 app.use('/api/v1/mimo', authRouter);
+app.use('/api/v1/courses', courseRoute);
 
 mongoose
   .connect(Database_URL)
